@@ -1,5 +1,5 @@
 # Welcome to Daztech Consultancy Services...
-## Our dedicated team are here to assist you on all aspects of your computer system. 
+### Our dedicated team are here to assist you on all aspects of your computer system. 
 
 You can use the [editor on GitHub](https://github.com/daztech/daztech.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
