@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## Welcome to Daztech...
+## Our dedicated team are here to assist you on all aspects of computer systems. 
 
 You can use the [editor on GitHub](https://github.com/daztech/daztech.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
