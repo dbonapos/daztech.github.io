@@ -67,9 +67,8 @@
 				Your message has been sent. Thank you!
 			</div>
 		</div>
-									<div class="contact-form">
-											
-		<form onclick="parent.location='mailto:darrellhixon@gmail.com?subject=DazTech%20Web%20Query&body='comment'" method="post" enctype="text/plain" id="contactform" class="contact">
+                                    <div class="contact-form">
+                                        <form action="mailto:daztechconsultancyservices@gmail.com?subject=DazTech%20Web%20Query&body='comment'" method="post" id="contactform" class="contact">                            
 											<div class="form-group has-feedback">
 												<label for="name">Name*</label>
 												<input type="text" class="form-control" name="name" placeholder="">
@@ -86,12 +85,13 @@
 												<textarea class="form-control" rows="6" name="comment" placeholder=""></textarea>
 												<i class="fa fa-pencil form-control-feedback"></i>
 											</div>
-											<input type="submit" value="Submit" id="submit" class="submit btn btn-default">
-                                            <input type="reset" value="Reset" id="reset" class="reset btn btn-default">
+											<input type="submit" value="SEND" id="submit" class="submit btn btn-default">
+                                            <input type="reset" value="CLEAR" id="reset" class="reset btn btn-default">
 										</form>
 									</div>
-        </div>
+                                </div>
 	</div>
+    </div>
     </section>
         <footer>
             <div class="container">
@@ -137,7 +137,6 @@
 		                </div>
                 </div>
             </div>
-
             <div id="sub-footer">
                 <div class="container">
                     <div class="row">
@@ -146,7 +145,6 @@
                                 <p><span>&copy;</span> DazTech Consultancy Services 2020 All right reserved.</p>
                             </div>
                         </div>
-
                         <div class="col-lg-3">
                             <ul class="social-network">
                                 <li><a class="fa fa-linkedin" data-placement="top" href="https://www.linkedin.com/in/darrellhixon" style="font-style: normal" title="Linkedin"></a></li>
@@ -160,122 +158,6 @@
         </footer>
    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 </body>                           
-<script 		var text,TA1,TA2;
-		window.onload = function()
-		{
-			TA1 = document.getElementById("TA1");
-			TA2 = document.getElementById("TA2");
-		}
-		function GenerateButton()
-		{
-         //document.getElementById("gen").submit();
-			var txt = '<a href="mailto:';
-			var i=0;
-			var head,to,subject,body;
-			T1 = document.getElementById("T1");
-			T2 = document.getElementById("T2");
-			T5 = document.getElementById("T5");
-			TA1 = document.getElementById("TA1");
-			TA2 = document.getElementById("TA2");
-			
-			head 	= T1.value;
-			to 	= T2.value;
-			subject = T5.value;
-			body	= TA1.value;
-			subject = encodeURIComponent(subject);
-			body = encodeURIComponent(body);
-			
-			if( to!='' )
-				txt += T2.value;
-			else
-				txt += "name1@mail.com,name2@mail.com";
-			if( cc!='' )
-			{
-				txt += (i++==0?'?':'&');
-				txt += 'cc=';
-				txt += cc;
-			}
-			if( bcc!='' )
-			{
-				txt += (i++==0?'?':'&');
-				txt += 'bcc=';
-				txt += bcc;
-			}
-			if( subject!='' )
-			{
-				txt += (i++==0?'?':'&');
-				txt += 'subject=';
-				txt += subject;
-			}
-			if( body!='' )
-			{
-				txt += (i++==0?'?':'&');
-				txt += 'body=';
-				txt += body;
-			}
-			txt += '">';
-			if( head!='' ) 
-				txt += head;
-			else
-				txt += "Send mail";
-			txt += '</a>';
-         txt=txt.replace(/%0A/g,"%0D%0A");
-			TA2.value = txt;
-			OnUpdateView();
-		}
-		function OnUpdateView()
-		{
-			window.frames["iview"].document.body.innerHTML = TA2.value;
-		}
-		function ResetButton() 
-		{
-			T1.style.color = "#aaa";
-			T2.style.color = "#aaa";
-			TA1.style.color = "#000";
-			TA1.value = text;
-		}
-		function OnSelectCode()
-		{
-			document.getElementById("TA2").select();
-		}
-		/*
-		function Newline()
-		{
-			s = getSelect(TA1);
-			newline = "%0D%0A";
-			text = TA1.value;
-			fillString(text, newline, s.start, s.end);
-			pos = s.start+newline.length;
-			setCaret(pos);
-			TA1.focus();
-		}
-		function getSelect(obj)
-		{
-			TA1 = gen.TA1;
-			var s = obj.selectionStart;
-			var e = obj.selectionEnd;
-			var txt = obj.value.substring(s,e);
-			return { start: s, end: e, text: txt };
-		}
-		function fillString(text, selectText, start, end)
-		{
-			// split textarea value into three pieces: before startPosition,
-		    // startPosition until endPosition, and after endPosition
-			var str1 = text.substring(0,start);
-			var str2 = text.substring(start,end);
-			var str3 = text.substring(end,text.length);
-			// replace str2 with formatted substring (selectedText)
-			str2 = selectText;
-			TA1.value = str1+str2+str3;
-		}
-		function setCaret(pos)
-		{
-			TA1.selectionStart = pos;
-			TA1.selectionEnd   = pos;
-		}*/</script>
-
- 
-
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
