@@ -1,2 +1,2 @@
 # daztech.github.io
-DazTech static web site
+Daztek static web site
